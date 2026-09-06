@@ -1,0 +1,14 @@
+{
+  "tasks": {
+    "dev": "deno run --allow-net --allow-env --allow-read --allow-write --unstable-kv --unstable-cron --watch main.ts",
+    "start": "deno run --allow-net --allow-env --allow-read --allow-write --unstable-kv --unstable-cron main.ts",
+    "setwebhook": "deno run --allow-net --allow-env scripts/set_webhook.ts"
+  },
+  "imports": {
+    "grammy": "https://deno.land/x/grammy@v1.30.0/mod.ts",
+    "grammy/types": "https://deno.land/x/grammy@v1.30.0/types.ts"
+  },
+  "compilerOptions": {
+    "strict": true
+  }
+}
